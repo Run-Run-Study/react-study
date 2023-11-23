@@ -5,10 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
+  // index.html 에 있는 root 를 ID 로 가진 요소를 지정한다.
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  // 화면에 그릴 JSX 태그를 지정한다.
+  <React.StrictMode> {/* React.StricMode ? 부적절한 코드를 감지하기 위한 헬퍼  */}
+    {/* App 은 src/App.tsx 로부터 Import 한 것을 사용한다. */}
     <App />
   </React.StrictMode>
 );
