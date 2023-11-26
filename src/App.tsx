@@ -2,6 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Hello from "./components/Hello";
+import Name from "./components/Name";
+import Message from "./components/Message";
+import ContainerSample from "./components/ContainerSample";
 
 // 함수로 App 이라는 컴포넌트를 정의한다.
 function App() {
@@ -25,6 +28,9 @@ function App() {
         </a>
       </header>
       <Hello />
+      <Name />
+      <Message />
+      <ContainerSample />
     </div>
   );
 }
