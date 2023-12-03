@@ -6,6 +6,7 @@ import Name from "./components/Name";
 import Message from "./components/Message";
 import ContainerSample from "./components/ContainerSample";
 import Page from "./components/ContextSample";
+import Counter from "./components/UseStatusSample";
 
 // 함수로 App 이라는 컴포넌트를 정의한다.
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Message />
       <ContainerSample />
       <Page />
+      <Counter initialValue={0} />
     </div>
   );
 }
