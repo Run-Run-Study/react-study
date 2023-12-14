@@ -1,13 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Hello from "./components/Hello";
-import Name from "./components/Name";
-import Message from "./components/Message";
-import ContainerSample from "./components/ContainerSample";
-import Page from "./components/ContextSample";
-import CounterUseState from "./components/UseStatusSample";
-import CounterUseReducer from "./components/UseReducerSample"
+import React from 'react'
+import './App.css'
+import Hello from './components/Hello'
+import Name from './components/Name'
+import Message from './components/Message'
+import ContainerSample from './components/ContainerSample'
+import Page from './components/ContextSample'
+import CounterUseState from './components/UseStatusSample'
+import CounterUseReducer from './components/UseReducerSample'
+import { MemoizationSample } from './components/MemoizationSample'
 
 // 함수로 App 이라는 컴포넌트를 정의한다.
 function App() {
@@ -16,20 +16,6 @@ function App() {
   // JSX ? Javascript / Typescript 내부에 HTML 태그를 직접 삽입할 수 있는 기능이다.
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
       <Hello />
       <Name />
       <Message />
@@ -37,9 +23,10 @@ function App() {
       <Page />
       <CounterUseState initialValue={0} />
       <CounterUseReducer initialValue={0} />
+      <MemoizationSample />
     </div>
-  );
+  )
 }
 
 // 정의한 App 을 default 로 Export 한다.
-export default App;
+export default App
