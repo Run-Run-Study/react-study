@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import './tic-tac-toe/tic-tac-toe.css'
 import Hello from './components/Hello'
 import Name from './components/Name'
 import Message from './components/Message'
@@ -8,6 +9,7 @@ import Page from './components/ContextSample'
 import CounterUseState from './components/UseStatusSample'
 import CounterUseReducer from './components/UseReducerSample'
 import { MemoizationSample } from './components/MemoizationSample'
+import { Game } from './tic-tac-toe/Game'
 
 // 함수로 App 이라는 컴포넌트를 정의한다.
 function App() {
@@ -24,6 +26,7 @@ function App() {
       <CounterUseState initialValue={0} />
       <CounterUseReducer initialValue={0} />
       <MemoizationSample />
+      <Game />
     </div>
   )
 }
